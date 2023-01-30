@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#003964;
+}
+
+header{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   margin-top: 25px;
+   border-bottom: 2px solid rgb(105, 142, 115);
+   
+}
+header p{
+
+    display: flex;
+   margin-left: 70px;
+   align-items: center;
+    color: white;
+    font-family: "Righteous",cursive;
+    font-size: 30px;
+    cursor: pointer;
+   transition-duration: 3s;
+   transition-property: color;
+
+   animation-name: design;
+   animation-duration: 5s;
+}
+header p:hover{
+
+    color: yellowgreen;
+}
+header .link{
+    /* border: 1px solid; */
+    margin-right: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+}
+header a{
+    font-family:sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+
+}
+
+.h button{
+    width: 85px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 17px;
+}
+#home{
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    padding-top: 2.5px;
+    text-align: center;
+
+}
+.h img{
+    margin-right: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+
+    background-color: white;
+    border-width: 2rem;
+
+    display: inline-block;
+  border-radius: 60px;
+
+}
+.h button{
+    cursor: pointer;
+}
+.h{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    align-items: center;
+
+}
+
+
+.container{
+   display: grid;
+grid-template-columns: 1fr 1fr;}
+.content{
+    display: flex;
+    flex-direction: column;
+   margin: 70px;
+}
+.container img{
+    max-width: 100%;
+    align-items: center;
+
+}
+.content h1{
+    /* border: 1px solid; */
+    width: 560px;
+    font-family:"Inter",sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #6BD7FC;
+    margin-top: 4.7rem;
+}
+.para p{
+    /* border: 1px solid; */
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 560px;
+    margin-top: 20px;
+    line-height: 1.4em;
+    color: rgb(200, 196, 196);
+}
+.container button{
+    width: 150px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top:30px ;
+    border-radius: 10px;
+    border-color: white;
+    color:#003964;
+    cursor: pointer;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+#home:hover,a:hover{
+   color: rgb(198, 173, 63);
+}
+
+article p{
+    /* font-family:cursive; */
+    font-family: 'Dancing Script',cursive;
+    color: whitesmoke;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+
+}
+.ui a, .web a{
+    font-family: 'Dancing Script',cursive;
+    text-decoration: none;
+    padding-left: 10px;
+    color: yellowgreen;
+
+    animation-name: design;
+    animation-duration: 5s;
+
+}
+
+@keyframes design{
+    0%{
+        color: aliceblue;
+    }
+    50%{
+        color:rgb(217, 20, 46)
+    }
+    100%{
+        color: aquamarine;
+    }
+}
+.ui a:hover, .web a:hover{
+
+    color: red;
+}
+
+
+@media only screen and (max-width: 628px) {
+
+    header{
+        grid-template-columns: 1fr;
+        border-bottom: none;
+       
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .h img{
+        display: none;
+    }
+    .h button{
+       display: none;
+    }
+    .container img{
+        max-height: 450px;
+        width: 360px;
+        margin-top: -25px;
+        object-fit: cover;
+    }
+   .link {
+    /* border: 1px solid; */
+    margin-left: -20px;
+   }
+   .content h1{
+    width: 300px;
+    font-size:3rem ;
+    margin-top: -20px;
+    text-align: center;
+    margin-left: -25px;
+
+   }
+   .para p{
+    width: 300px;
+    margin-left: -25px;
+    font-size: 16px;
+   }
+}
